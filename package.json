@@ -22,7 +22,7 @@
     "fs-extra": "*",
     "fs-extra-promise": "*",
     "globby": "*",
-    "inquirer": "^1.0.3",
+    "inquirer": "^3.2.0",
     "load-json-file": "*",
     "preprocess": "*",
     "require-folder-tree": "*",
