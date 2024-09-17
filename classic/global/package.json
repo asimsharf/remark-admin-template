@@ -23,7 +23,9 @@
     "start": "gulp",
     "build": "gulp build --production",
     "stage": "gulp --production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "devDependencies": {
     "argv": "^0.0.2",
@@ -109,7 +111,7 @@
     "blueimp-load-image": "^2.17.0",
     "blueimp-tmpl": "^3.11.0",
     "bootbox": "^4.4.0",
-    "bootstrap": "^4.0.0-alpha.4",
+    "bootstrap": "^5.0.0",
     "bootstrap-datepicker": "^1.7.1",
     "bootstrap-hover-dropdown": "^2.2.1",
     "bootstrap-markdown": "^2.10.0",
@@ -228,6 +230,8 @@
     "toastr": "^2.1.2",
     "typeahead.js": "^0.11.1",
     "webui-popover": "^1.2.18",
-    "x-editable": "^1.5.1"
-  }
+    "x-editable": "^1.5.1",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
